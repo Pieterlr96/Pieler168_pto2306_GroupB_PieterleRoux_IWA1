@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tally Count</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="/Scripts.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -32,10 +33,10 @@
         <button> Settings </button>
     </aside>
     <main class="counter">
-        <input class="counter_value" readonly value="10">
-        <div class="counter_actions">
-            <button class="counter_button conter_button_first">-</button>
-            <button class="counter_button">+</button>
+        <input class="counter__value" data-key="number" readonly value="0" />
+        <div class="counter__actions">
+            <button data-key="subtract" class="counter__button counter__button_first">-</button>
+            <button data-key="add" class="counter__button">+</button>
         </div>
     </main>
     <footer class="footer"> Inspired by <a class="footer_link" href="https://tallycount.app/">Tally Count</a>. 
